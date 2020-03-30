@@ -5,7 +5,7 @@ Ejercicios realizados en el curso que brinda codigo facilito sobre Controles y E
 ## Ejercicios
 - Hero Image
 
-![Ejercicio Hero Image](img/heroImage.png)
+![Ejercicio Hero Image](hero/img/heroImage.png)
 
 
 
