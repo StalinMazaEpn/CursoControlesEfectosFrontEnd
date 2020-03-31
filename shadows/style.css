@@ -1,0 +1,86 @@
+body{
+    background: #e4e1e1;
+    display: flex;
+    margin: 10px;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+
+.general-element{
+    margin: 12px;
+}
+
+.card{
+    background: white;
+    border-radius: 3px;
+    width: 200px;
+    height: 400px;
+    box-shadow: 0px 2px 5px rgba(0,0,0,.16),
+    0px 2px 5px rgba(0,0,0,.12);
+}
+
+.card-two, .card-three{
+    background: white;
+    border-radius: 3px;
+    width: 400px;
+    height: 300px;
+    position: relative;
+    flex-direction: column;
+}
+
+.card-two::before, .card-two::after{
+    content: "";
+    width: 30%;
+    height: 10px; 
+    top: 94%;
+    left: 69%;
+    transform: rotate(5deg);
+    background: transparent;
+    position: absolute;
+    box-shadow: 0px 15px 10px rgba(0,0,0,.3);
+    z-index: -1;
+}
+
+.card-two::after{
+    left: 1%;
+    transform: rotate(-5deg);
+}
+
+.card-three::after{
+    content: "";
+    width: 30%;
+    height: 10px; 
+    top: 94%;
+    left: 69%;
+    transform: rotate(5deg);
+    background: transparent;
+    position: absolute;
+    box-shadow: 0px 15px 10px rgba(0,0,0,.3);
+    z-index: -1;
+}
+
+
+.box-3d{
+    background-color: rgb(200,50,50);
+    width: 300px;
+    height: 200px;
+    box-shadow: 4px 4px 0px rgb(180,40,40),
+    3px 12px 4px rgba(0,0,0,.2);
+}
+/* Cuando haces click */
+.box-3d:active{
+    transition: all .3s ease-in-out;
+    box-shadow: 2px 2px 0px 2px rgb(180,40,40),
+    3px 12px 4px rgba(0,0,0,.2);
+}
+
+
+.texto-3d{
+    display: block;
+    font-size: 56px;
+    font-family: 'Roboto', Arial;
+    color: rgb(50,50,150);
+    text-shadow: 1px 1px 1px rgb(40,40,140),
+    2px 2px 1px rgb(30,30,130),
+    3px 4px 4px rgba(0,0,0,.2);
+}
