@@ -1,0 +1,24 @@
+.custom-list li{
+    list-style-type: none;
+    position: relative;
+    margin-top: 1em;
+}
+
+.custom-list li::before{
+    content: "\f00c";
+    font-family: FontAwesome;
+    font-size: .8em;
+    /* background: rgb(90, 47, 54); */
+    position: absolute;
+    width: 0.5em;
+    height: 0.5em;
+    border-radius: 30%;
+    left: -1.6em;
+    top: 0.10em;
+    transform: scale(1.1);
+    color: green;
+}
+
+.custom-list ul{
+    list-style-type: none;
+}
