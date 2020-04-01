@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Canvas</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <canvas id="canvas" width="700" height="600">
+
+    </canvas>
+    <script>
+        let canvas = document.getElementById('canvas');
+        let ctx = canvas.getContext('2d');
+         //Con fondo blanco
+        // ctx.fillStyle = 'white';
+        // ctx.fillRect(0,0,canvas.height, canvas.width);
+        let image = new Image();
+        image.src = 'image2.jpg';
+        image.onload = function(){
+            console.log('this', this);
+            let scale = this.height / this.width;
+            let heigth = canvas.height*scale;
+            let y = (canvas.height /2) - (heigth /2)
+            console.log('scale', scale);
+           
+            ctx.drawImage(this,0,y, canvas.width, heigth);
+        }
+        // let img = 
+    </script>
+</body>
+</html>
